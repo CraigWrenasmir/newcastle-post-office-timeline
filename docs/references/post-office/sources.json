@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "role": "Bolton corner and facade details",
+    "title": "Newcastle PO.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Newcastle_PO.jpg",
+    "file": "./references/post-office/po-1.jpg",
+    "author": "Janet AG51",
+    "date": "2019-09-30 15:48:32",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Newcastle_PO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalSha256": "4e5a8f48f8034ac51679d16c8ee91aff113b3079bd353185179ad283249dd0b7",
+    "changes": "Resized for the reference viewer. Original available at the linked source; originals are not bundled in this repository."
+  },
+  {
+    "id": 2,
+    "role": "Hunter facade and corner pavilions",
+    "title": "Newcastle Post Office, NSW.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Newcastle_Post_Office,_NSW.jpg",
+    "file": "./references/post-office/po-2.jpg",
+    "author": "Mertie .",
+    "date": "2015-09-03 11:04:34",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Newcastle_Post_Office%2C_NSW.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalSha256": "9bfdee87516d6c2faadae65e965560067624f8b62e8e340d9e795b5fee098ae4",
+    "changes": "Resized for the reference viewer. Original available at the linked source; originals are not bundled in this repository."
+  },
+  {
+    "id": 4,
+    "role": "Early facade cross-check",
+    "title": "SLNSW 796732 Post Office Newcastle.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:SLNSW_796732_Post_Office_Newcastle.jpg",
+    "file": "./references/post-office/po-4.jpg",
+    "author": "William Henry Broadhurst",
+    "date": "ca. 1900\u20131927 (catalogue range)",
+    "licence": "Public domain",
+    "licenceUrl": "https://commons.wikimedia.org/wiki/File:SLNSW_796732_Post_Office_Newcastle.jpg#Licensing",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/SLNSW_796732_Post_Office_Newcastle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalSha256": "46c3cc369472f9cce68444c8cf17db30ac5b557e0539c62051848fdedaa4d287",
+    "changes": "Resized for the reference viewer. Original available at the linked source; originals are not bundled in this repository."
+  }
+]

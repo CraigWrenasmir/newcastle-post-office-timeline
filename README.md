@@ -1,5 +1,7 @@
 # Newcastle Post Office timeline
 
+[Open the public timeline](https://craigwrenasmir.github.io/newcastle-post-office-timeline/) · [Photo Comparison](https://craigwrenasmir.github.io/newcastle-post-office-timeline/post-office.html)
+
 An interactive model of the Newcastle Post Office site at Hunter and Bolton Streets, from 1026 to 2526. Geometry builds, ages and collapses as the year changes, with moving people, wildlife, vehicles, seasons and future vegetation.
 
 This repository contains two pages:
@@ -46,4 +48,6 @@ After building, run `npx playwright install chromium` once and then `npm test`. 
 
 ## Static hosting
 
-The build uses relative paths and can be hosted under a GitHub Pages project directory or another static host. Upload the **contents** of `dist/`. Only the two pages and their required assets are built.
+GitHub Pages publishes the committed `docs/` folder on `main`. To update the public site, run `npm run build:pages`, then commit and push the source changes and regenerated `docs/` files. The preparation script copies the production build and adds `.nojekyll`. Only the timeline, Photo Comparison and their required assets are published.
+
+The build uses relative paths and also works under another static host. For other hosts, upload the contents of `dist/`.
