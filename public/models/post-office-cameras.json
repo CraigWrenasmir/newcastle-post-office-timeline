@@ -1,0 +1,774 @@
+{
+  "status": "Photographic alignment of estimated geometry; not a survey",
+  "widthMetres": 28.92,
+  "depthMetres": 29.8,
+  "limitations": [
+    "Manual column landmarks include foliage occlusion.",
+    "Geometry dimensions are estimates constrained by mapped envelope and photographs.",
+    "Camera fitting uses approximate lens priors and no distortion model.",
+    "Check points were excluded from camera fitting, but are on the same facade planes; this is not independent survey validation.",
+    "2015 and 2019 are reference capture dates, not a verified 2026 condition."
+  ],
+  "views": [
+    {
+      "id": "front-2015",
+      "imageSize": [
+        1600,
+        1067
+      ],
+      "parameters": {
+        "position": [
+          -21.280150544776888,
+          -55.00617854114881,
+          1.6893209044853796
+        ],
+        "yaw": 1.0836866290481388,
+        "pitch": 0.17302481605552825,
+        "roll": 0.019259882205329013,
+        "focalPixels": 3129.70521745837
+      },
+      "parameterBoundsReached": false,
+      "camera": {
+        "position": [
+          -21.280150544776888,
+          1.6893209044853796,
+          55.00617854114881
+        ],
+        "target": [
+          15.606623924555123,
+          15.462343558927987,
+          -14.633391504974
+        ],
+        "fov": 0.33768089362442827,
+        "roll": 0.019259882205329013,
+        "aspect": 1.499531396438613
+      },
+      "landmarks": [
+        {
+          "id": "front_column_0_top",
+          "world": [
+            5.2,
+            0.65,
+            12.9
+          ],
+          "image": [
+            689,
+            530
+          ],
+          "use": "fit",
+          "projected": [
+            667.8891121087534,
+            508.85182339267345
+          ],
+          "errorPixels": 29.88168270649192
+        },
+        {
+          "id": "front_column_0_base",
+          "world": [
+            5.2,
+            0.65,
+            8.1
+          ],
+          "image": [
+            684,
+            726
+          ],
+          "use": "fit",
+          "projected": [
+            661.50700882107,
+            748.0804681703654
+          ],
+          "errorPixels": 31.519545155315
+        },
+        {
+          "id": "front_column_1_top",
+          "world": [
+            8.904,
+            0.65,
+            12.9
+          ],
+          "image": [
+            842,
+            551
+          ],
+          "use": "check",
+          "projected": [
+            830.416416175244,
+            527.1015792284064
+          ],
+          "errorPixels": 26.557747073147695
+        },
+        {
+          "id": "front_column_1_base",
+          "world": [
+            8.904,
+            0.65,
+            8.1
+          ],
+          "image": [
+            836,
+            738
+          ],
+          "use": "check",
+          "projected": [
+            826.322170527273,
+            760.1306005068689
+          ],
+          "errorPixels": 24.15416862775053
+        },
+        {
+          "id": "front_column_2_top",
+          "world": [
+            12.608,
+            0.65,
+            12.9
+          ],
+          "image": [
+            997,
+            567
+          ],
+          "use": "fit",
+          "projected": [
+            984.5328828649524,
+            544.4069046536187
+          ],
+          "errorPixels": 25.804591974872924
+        },
+        {
+          "id": "front_column_2_base",
+          "world": [
+            12.608,
+            0.65,
+            8.1
+          ],
+          "image": [
+            990,
+            751
+          ],
+          "use": "fit",
+          "projected": [
+            982.4999557269198,
+            771.5492282605004
+          ],
+          "errorPixels": 21.875133055602465
+        },
+        {
+          "id": "front_column_3_top",
+          "world": [
+            16.312,
+            0.65,
+            12.9
+          ],
+          "image": [
+            1148,
+            583
+          ],
+          "use": "check",
+          "projected": [
+            1130.8749396068479,
+            560.8392624003882
+          ],
+          "errorPixels": 28.006534673678512
+        },
+        {
+          "id": "front_column_3_base",
+          "world": [
+            16.312,
+            0.65,
+            8.1
+          ],
+          "image": [
+            1136,
+            764
+          ],
+          "use": "check",
+          "projected": [
+            1130.702008493037,
+            782.3847262200668
+          ],
+          "errorPixels": 19.132874122689017
+        },
+        {
+          "id": "front_column_4_top",
+          "world": [
+            20.016000000000002,
+            0.65,
+            12.9
+          ],
+          "image": [
+            1285,
+            596
+          ],
+          "use": "fit",
+          "projected": [
+            1270.0163843013238,
+            576.4630826987086
+          ],
+          "errorPixels": 24.621126640410164
+        },
+        {
+          "id": "front_column_4_base",
+          "world": [
+            20.016000000000002,
+            0.65,
+            8.1
+          ],
+          "image": [
+            1272,
+            775
+          ],
+          "use": "fit",
+          "projected": [
+            1271.52407742049,
+            792.6806513577123
+          ],
+          "errorPixels": 17.68705556995463
+        },
+        {
+          "id": "front_column_5_top",
+          "world": [
+            23.720000000000002,
+            0.65,
+            12.9
+          ],
+          "image": [
+            1408,
+            608
+          ],
+          "use": "fit",
+          "projected": [
+            1402.4759043916863,
+            591.3366075728953
+          ],
+          "errorPixels": 17.55517813835792
+        },
+        {
+          "id": "front_column_5_base",
+          "world": [
+            23.720000000000002,
+            0.65,
+            8.1
+          ],
+          "image": [
+            1394,
+            784
+          ],
+          "use": "fit",
+          "projected": [
+            1405.504019790465,
+            802.476328037466
+          ],
+          "errorPixels": 21.76504466081942
+        },
+        {
+          "id": "corner_front_top",
+          "world": [
+            0.55,
+            -0.1,
+            12.9
+          ],
+          "image": [
+            432,
+            506
+          ],
+          "use": "fit",
+          "projected": [
+            465.52460902146083,
+            478.32816577421806
+          ],
+          "errorPixels": 43.46987254939874
+        },
+        {
+          "id": "corner_front_base",
+          "world": [
+            0.55,
+            -0.1,
+            8.1
+          ],
+          "image": [
+            444,
+            710
+          ],
+          "use": "fit",
+          "projected": [
+            456.00367422540404,
+            728.4765178755554
+          ],
+          "errorPixels": 22.033381667718338
+        },
+        {
+          "id": "bolton_cross_1_top",
+          "world": [
+            0.55,
+            9.08,
+            12.9
+          ],
+          "image": [
+            291,
+            558
+          ],
+          "use": "fit",
+          "projected": [
+            305.35105621731606,
+            545.4862070560633
+          ],
+          "errorPixels": 19.040688758453168
+        },
+        {
+          "id": "bolton_cross_1_base",
+          "world": [
+            0.55,
+            9.08,
+            8.1
+          ],
+          "image": [
+            291,
+            742
+          ],
+          "use": "fit",
+          "projected": [
+            294.98954863953077,
+            766.6084024383238
+          ],
+          "errorPixels": 24.929700537986427
+        },
+        {
+          "id": "bolton_cross_3_top",
+          "world": [
+            0.55,
+            16.84,
+            12.9
+          ],
+          "image": [
+            185,
+            607
+          ],
+          "use": "check",
+          "projected": [
+            196.74027947816205,
+            591.0248549801709
+          ],
+          "errorPixels": 19.825221830535085
+        },
+        {
+          "id": "bolton_cross_3_base",
+          "world": [
+            0.55,
+            16.84,
+            8.1
+          ],
+          "image": [
+            185,
+            776
+          ],
+          "use": "check",
+          "projected": [
+            186.11067681619363,
+            792.3934480458765
+          ],
+          "errorPixels": 16.431029846692002
+        },
+        {
+          "id": "bolton_cross_4_top",
+          "world": [
+            0.55,
+            20.72,
+            12.9
+          ],
+          "image": [
+            140,
+            629
+          ],
+          "use": "fit",
+          "projected": [
+            149.49712031867762,
+            610.8331065770933
+          ],
+          "errorPixels": 20.499544165339138
+        },
+        {
+          "id": "bolton_cross_4_base",
+          "world": [
+            0.55,
+            20.72,
+            8.1
+          ],
+          "image": [
+            140,
+            788
+          ],
+          "use": "fit",
+          "projected": [
+            138.8267958732855,
+            803.5913692421325
+          ],
+          "errorPixels": 15.635446996087285
+        }
+      ],
+      "fitRmsPixels": 25.00794787938789,
+      "checkRmsPixels": 22.738325981971936
+    },
+    {
+      "id": "corner-2019",
+      "imageSize": [
+        1600,
+        1200
+      ],
+      "parameters": {
+        "position": [
+          -23.008519506147778,
+          -8.076875674272442,
+          0.03800301374495478
+        ],
+        "yaw": 0.5847292116404084,
+        "pitch": 0.31386879677216495,
+        "roll": 0.012589697200491346,
+        "focalPixels": 1281.162981600118
+      },
+      "parameterBoundsReached": false,
+      "camera": {
+        "position": [
+          -23.008519506147778,
+          0.03800301374495478,
+          8.076875674272442
+        ],
+        "target": [
+          40.441425081458604,
+          24.737261357774745,
+          -33.923733477078606
+        ],
+        "fov": 0.8759752919208921,
+        "roll": 0.012589697200491346,
+        "aspect": 1.3333333333333333
+      },
+      "landmarks": [
+        {
+          "id": "bolton_column_0_top",
+          "world": [
+            0.65,
+            5.2,
+            12.9
+          ],
+          "image": [
+            855,
+            443
+          ],
+          "use": "fit",
+          "projected": [
+            887.831171631294,
+            433.7438981068266
+          ],
+          "errorPixels": 34.11101366040431
+        },
+        {
+          "id": "bolton_column_0_base",
+          "world": [
+            0.65,
+            5.2,
+            8.1
+          ],
+          "image": [
+            853,
+            618
+          ],
+          "use": "fit",
+          "projected": [
+            889.8339150975593,
+            632.2405315977746
+          ],
+          "errorPixels": 39.4908855509904
+        },
+        {
+          "id": "bolton_column_1_top",
+          "world": [
+            0.65,
+            9.08,
+            12.9
+          ],
+          "image": [
+            740,
+            476
+          ],
+          "use": "check",
+          "projected": [
+            751.2860961699845,
+            469.45434372937217
+          ],
+          "errorPixels": 13.04689935468761
+        },
+        {
+          "id": "bolton_column_1_base",
+          "world": [
+            0.65,
+            9.08,
+            8.1
+          ],
+          "image": [
+            730,
+            642
+          ],
+          "use": "check",
+          "projected": [
+            746.467009825632,
+            656.3378232643498
+          ],
+          "errorPixels": 21.834275544592522
+        },
+        {
+          "id": "bolton_column_2_top",
+          "world": [
+            0.65,
+            12.96,
+            12.9
+          ],
+          "image": [
+            636,
+            503
+          ],
+          "use": "fit",
+          "projected": [
+            631.2092807713955,
+            500.8578679673062
+          ],
+          "errorPixels": 5.247830063256047
+        },
+        {
+          "id": "bolton_column_2_base",
+          "world": [
+            0.65,
+            12.96,
+            8.1
+          ],
+          "image": [
+            628,
+            661
+          ],
+          "use": "fit",
+          "projected": [
+            621.1845079318264,
+            677.3954654247016
+          ],
+          "errorPixels": 17.755624985449604
+        },
+        {
+          "id": "bolton_column_3_top",
+          "world": [
+            0.65,
+            16.84,
+            12.9
+          ],
+          "image": [
+            535,
+            534
+          ],
+          "use": "check",
+          "projected": [
+            524.7908924705251,
+            528.6893225680544
+          ],
+          "errorPixels": 11.50778742133154
+        },
+        {
+          "id": "bolton_column_3_base",
+          "world": [
+            0.65,
+            16.84,
+            8.1
+          ],
+          "image": [
+            525,
+            679
+          ],
+          "use": "check",
+          "projected": [
+            510.7676485553528,
+            695.9544714955614
+          ],
+          "errorPixels": 22.136258295785996
+        },
+        {
+          "id": "bolton_column_4_top",
+          "world": [
+            0.65,
+            20.72,
+            12.9
+          ],
+          "image": [
+            431,
+            565
+          ],
+          "use": "fit",
+          "projected": [
+            429.8259221870603,
+            553.525380521058
+          ],
+          "errorPixels": 11.534528637848759
+        },
+        {
+          "id": "bolton_column_4_base",
+          "world": [
+            0.65,
+            20.72,
+            8.1
+          ],
+          "image": [
+            426,
+            699
+          ],
+          "use": "fit",
+          "projected": [
+            412.7187473044936,
+            712.4346554442054
+          ],
+          "errorPixels": 18.89131123205624
+        },
+        {
+          "id": "bolton_column_5_top",
+          "world": [
+            0.65,
+            24.599999999999998,
+            12.9
+          ],
+          "image": [
+            324,
+            599
+          ],
+          "use": "fit",
+          "projected": [
+            344.5597575380906,
+            575.8249231874858
+          ],
+          "errorPixels": 30.9804424644163
+        },
+        {
+          "id": "bolton_column_5_base",
+          "world": [
+            0.65,
+            24.599999999999998,
+            8.1
+          ],
+          "image": [
+            325,
+            714
+          ],
+          "use": "fit",
+          "projected": [
+            325.0699831466852,
+            727.1667711310128
+          ],
+          "errorPixels": 13.16695711458387
+        },
+        {
+          "id": "corner_west_top",
+          "world": [
+            -0.1,
+            0.55,
+            12.9
+          ],
+          "image": [
+            1087,
+            389
+          ],
+          "use": "fit",
+          "projected": [
+            1064.7931625021843,
+            369.57216836036076
+          ],
+          "errorPixels": 29.505665114898914
+        },
+        {
+          "id": "corner_west_base",
+          "world": [
+            -0.1,
+            0.55,
+            8.1
+          ],
+          "image": [
+            1100,
+            583
+          ],
+          "use": "fit",
+          "projected": [
+            1077.449201986356,
+            588.2200967516485
+          ],
+          "errorPixels": 23.147092714825792
+        },
+        {
+          "id": "hunter_cross_mid_top",
+          "world": [
+            12.608,
+            0.55,
+            12.9
+          ],
+          "image": [
+            1245,
+            565
+          ],
+          "use": "fit",
+          "projected": [
+            1235.2586632232885,
+            549.9002829369002
+          ],
+          "errorPixels": 17.96928205530143
+        },
+        {
+          "id": "hunter_cross_mid_base",
+          "world": [
+            12.608,
+            0.55,
+            8.1
+          ],
+          "image": [
+            1255,
+            700
+          ],
+          "use": "fit",
+          "projected": [
+            1251.460887265984,
+            713.6373018799289
+          ],
+          "errorPixels": 14.089049702105106
+        },
+        {
+          "id": "hunter_cross_east_top",
+          "world": [
+            24.2,
+            -0.1,
+            12.9
+          ],
+          "image": [
+            1350,
+            647
+          ],
+          "use": "fit",
+          "projected": [
+            1344.7219773082338,
+            642.8070913875806
+          ],
+          "errorPixels": 6.740771926634175
+        },
+        {
+          "id": "hunter_cross_east_base",
+          "world": [
+            24.2,
+            -0.1,
+            8.1
+          ],
+          "image": [
+            1360,
+            769
+          ],
+          "use": "fit",
+          "projected": [
+            1361.3500310593868,
+            776.8105450646619
+          ],
+          "errorPixels": 7.926360960013359
+        }
+      ],
+      "fitRmsPixels": 21.917068687275464,
+      "checkRmsPixels": 17.81432200506695
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "newcastle-post-office-timeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "test": "node scripts/verify-release.mjs"
+  },
+  "dependencies": {
+    "@babylonjs/core": "9.25.0",
+    "@babylonjs/loaders": "9.25.0",
+    "@babylonjs/materials": "9.25.0"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2",
+    "vite": "8.2.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,1752 @@
+{
+  "schema": 1,
+  "title": "Newcastle Post Office",
+  "status": "Photographic reconstruction in progress",
+  "scaleBasis": "28.92 m mapped-envelope width; heights and facade depths estimated",
+  "dimensions": {
+    "width": 28.92,
+    "depth": 29.8,
+    "corniceHeight": 14.12,
+    "domeTop": 19.9426
+  },
+  "blockPlacement": {
+    "position": [
+      11.85,
+      0,
+      -16.63
+    ]
+  },
+  "meshCount": 427,
+  "vertexCount": 125786,
+  "components": [
+    {
+      "name": "PO__foundation__darkstone",
+      "type": "structure"
+    },
+    {
+      "name": "PO__central_envelope__stone",
+      "type": "structure"
+    },
+    {
+      "name": "PO__hunter_colonnade_floor__trim",
+      "type": "floor"
+    },
+    {
+      "name": "PO__hunter_inner_wall__stone",
+      "type": "wall"
+    },
+    {
+      "name": "PO__hunter_window_0__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_0__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_0__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_1__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_1__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_1__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_2__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_2__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_2__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_3__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_3__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_3__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_4__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_4__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_4__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_5__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_5__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_5__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_6__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_6__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_window_6__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__hunter_ground_bay_0__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_bay_0__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_column_0_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_ground_column_0_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_ground_column_0_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_ground_column_0_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_0__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_0__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_0__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_balcony_0__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_balcony_0__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_upper_bay_0__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_upper_bay_0__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_upper_bay_0__darkstone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_upper_column_0_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_upper_column_0_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_upper_column_0_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_upper_column_0_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_0__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_0__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_parapet_0__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_0__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_0__darkstone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_ground_bay_1__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_bay_1__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_1__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_1__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_1__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_balcony_1__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_balcony_1__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_1__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_1__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_parapet_1__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_1__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_ground_bay_2__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_bay_2__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_column_2_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_2__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_2__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_2__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_balcony_2__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_balcony_2__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_upper_column_2_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_2__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_2__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_parapet_2__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_2__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_ground_bay_3__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_bay_3__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_column_3_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_3__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_3__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_3__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_balcony_3__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_balcony_3__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_upper_column_3_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_3__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_3__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_parapet_3__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_3__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_ground_bay_4__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_bay_4__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_column_4_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_4__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_4__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_4__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_balcony_4__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_balcony_4__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_upper_column_4_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_4__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_4__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_parapet_4__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_4__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_ground_bay_5__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_bay_5__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_column_5_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_5__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_5__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_5__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_balcony_5__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_balcony_5__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_upper_column_5_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_5__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_5__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_parapet_5__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_5__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_ground_bay_6__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_bay_6__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_ground_column_6_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_ground_column_6_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_ground_column_6_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_ground_column_6_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_6__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_6__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_entablature_ground_6__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_balcony_6__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_balcony_6__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__hunter_upper_bay_6__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_upper_bay_6__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_upper_bay_6__darkstone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__hunter_upper_column_6_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_upper_column_6_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_upper_column_6_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_upper_column_6_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_6__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_roof_entablature_6__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__hunter_parapet_6__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_6__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_parapet_6__darkstone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__hunter_foundation_courses__mortar",
+      "type": "foundation"
+    },
+    {
+      "name": "PO__hunter_ashlar_joints__mortar",
+      "type": "wall"
+    },
+    {
+      "name": "PO__bolton_colonnade_floor__trim",
+      "type": "floor"
+    },
+    {
+      "name": "PO__bolton_inner_wall__stone",
+      "type": "wall"
+    },
+    {
+      "name": "PO__bolton_window_0__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_0__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_0__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_1__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_1__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_1__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_2__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_2__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_2__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_3__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_3__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_3__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_4__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_4__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_4__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_5__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_5__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_5__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_6__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_6__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_window_6__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__bolton_ground_bay_0__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_0__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_column_0_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_column_0_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_column_0_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_column_0_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_balustrade_0__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_0__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_0__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_0__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_balcony_0__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_balcony_0__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_upper_bay_0__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_upper_bay_0__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_upper_bay_0__darkstone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_upper_column_0_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_upper_column_0_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_upper_column_0_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_upper_column_0_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_0__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_0__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_parapet_0__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_0__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_0__darkstone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_ground_bay_1__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_1__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_balustrade_1__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_1__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_1__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_1__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_balcony_1__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_balcony_1__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_1__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_1__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_parapet_1__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_1__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_ground_bay_2__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_2__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_column_2_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_balustrade_2__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_2__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_2__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_2__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_balcony_2__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_balcony_2__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_upper_column_2_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_2__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_2__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_parapet_2__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_2__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_ground_bay_3__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_3__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_column_3_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_balustrade_3__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_3__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_3__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_3__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_balcony_3__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_balcony_3__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_upper_column_3_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_3__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_3__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_parapet_3__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_3__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_ground_bay_4__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_4__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_column_4_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_balustrade_4__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_4__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_4__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_4__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_balcony_4__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_balcony_4__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_upper_column_4_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_4__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_4__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_parapet_4__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_4__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_ground_bay_5__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_5__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_5__glass",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_5__timber",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_5__darkstone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_column_5_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_5__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_5__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_5__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_balcony_5__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_balcony_5__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_upper_column_5_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_5__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_5__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_parapet_5__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_5__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_ground_bay_6__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_bay_6__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_ground_column_6_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_column_6_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_column_6_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_ground_column_6_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_6__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_6__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_entablature_ground_6__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_balcony_6__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_balcony_6__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__bolton_upper_bay_6__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_upper_bay_6__glass",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_upper_bay_6__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_upper_bay_6__timber",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__bolton_upper_column_6_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_upper_column_6_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_upper_column_6_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_upper_column_6_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_6__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_roof_entablature_6__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__bolton_parapet_6__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_6__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_parapet_6__darkstone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__bolton_foundation_courses__mortar",
+      "type": "foundation"
+    },
+    {
+      "name": "PO__bolton_ashlar_joints__mortar",
+      "type": "wall"
+    },
+    {
+      "name": "PO__east_colonnade_floor__trim",
+      "type": "floor"
+    },
+    {
+      "name": "PO__east_inner_wall__stone",
+      "type": "wall"
+    },
+    {
+      "name": "PO__east_window_0__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_0__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_0__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_1__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_1__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_1__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_2__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_2__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_2__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_3__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_3__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_3__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_4__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_4__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_4__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_5__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_5__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_5__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_6__glass",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_6__trim",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_window_6__timber",
+      "type": "window"
+    },
+    {
+      "name": "PO__east_ground_bay_0__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_bay_0__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_column_0_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_ground_column_0_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_ground_column_0_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_ground_column_0_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_entablature_ground_0__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_0__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_0__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_balcony_0__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_balcony_0__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_upper_bay_0__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_upper_bay_0__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_upper_bay_0__darkstone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_upper_column_0_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_upper_column_0_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_upper_column_0_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_upper_column_0_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_roof_entablature_0__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_roof_entablature_0__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_parapet_0__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_0__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_0__darkstone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_ground_bay_1__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_bay_1__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_entablature_ground_1__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_1__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_1__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_balcony_1__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_balcony_1__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_roof_entablature_1__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_roof_entablature_1__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_parapet_1__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_1__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_ground_bay_2__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_bay_2__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_column_2_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_entablature_ground_2__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_2__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_2__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_balcony_2__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_balcony_2__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_upper_column_2_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_roof_entablature_2__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_roof_entablature_2__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_parapet_2__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_2__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_ground_bay_3__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_bay_3__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_column_3_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_entablature_ground_3__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_3__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_3__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_balcony_3__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_balcony_3__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_upper_column_3_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_roof_entablature_3__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_roof_entablature_3__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_parapet_3__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_3__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_ground_bay_4__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_bay_4__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_column_4_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_entablature_ground_4__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_4__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_4__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_balcony_4__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_balcony_4__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_upper_column_4_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_roof_entablature_4__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_roof_entablature_4__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_parapet_4__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_4__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_ground_bay_5__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_bay_5__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_column_5_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_entablature_ground_5__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_5__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_5__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_balcony_5__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_balcony_5__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_upper_column_5_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_roof_entablature_5__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_roof_entablature_5__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_parapet_5__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_5__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_ground_bay_6__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_bay_6__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_ground_column_6_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_ground_column_6_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_ground_column_6_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_ground_column_6_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_entablature_ground_6__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_6__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_entablature_ground_6__darkstone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_balcony_6__trim",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_balcony_6__stone",
+      "type": "balustrade"
+    },
+    {
+      "name": "PO__east_upper_bay_6__stone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_upper_bay_6__trim",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_upper_bay_6__darkstone",
+      "type": "arcade"
+    },
+    {
+      "name": "PO__east_upper_column_6_0__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_upper_column_6_1__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_upper_column_6_2__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_upper_column_6_3__trim",
+      "type": "column"
+    },
+    {
+      "name": "PO__east_roof_entablature_6__trim",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_roof_entablature_6__stone",
+      "type": "entablature"
+    },
+    {
+      "name": "PO__east_parapet_6__stone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_6__trim",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_parapet_6__darkstone",
+      "type": "parapet"
+    },
+    {
+      "name": "PO__east_foundation_courses__mortar",
+      "type": "foundation"
+    },
+    {
+      "name": "PO__east_ashlar_joints__mortar",
+      "type": "wall"
+    },
+    {
+      "name": "PO__cupola_0_drum__stone",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_0_drum__glass",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_0_drum__trim",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_0_drum__metal",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_0_copper__copper",
+      "type": "roof"
+    },
+    {
+      "name": "PO__cupola_0_copper__metal",
+      "type": "roof"
+    },
+    {
+      "name": "PO__cupola_1_drum__stone",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_1_drum__glass",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_1_drum__trim",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_1_drum__metal",
+      "type": "cupola"
+    },
+    {
+      "name": "PO__cupola_1_copper__copper",
+      "type": "roof"
+    },
+    {
+      "name": "PO__cupola_1_copper__metal",
+      "type": "roof"
+    },
+    {
+      "name": "PO__main_roof__roof",
+      "type": "roof"
+    },
+    {
+      "name": "PO__hunter_steps__trim",
+      "type": "foundation"
+    }
+  ],
+  "cameras": {
+    "orbit": {
+      "position": [
+        -25,
+        18,
+        34
+      ],
+      "target": [
+        14.46,
+        8.4,
+        -8
+      ],
+      "fov": 0.64
+    }
+  },
+  "limits": [
+    "No measured architectural elevations recovered yet.",
+    "Rear elevation and roof arrangement remain provisional.",
+    "Sculptural ornament and stone weathering simplified.",
+    "Photographs span 2015 and 2019; current 2026 repair status unverified."
+  ]
+}
