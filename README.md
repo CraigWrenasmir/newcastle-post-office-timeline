@@ -32,6 +32,7 @@ npm run preview
 - Select a milestone, drag the timeline or enter a year. Play, reverse and speed control the timeline.
 - Drag to orbit; right-drag to pan; scroll, pinch or use +/− to zoom. Double-click a surface to focus. Overview and Street/Ground view restore preset cameras.
 - Pause movement independently of the year. Choose a season and optionally enable future tidal water.
+- **Image quality** defaults to High. Maximum uses more display pixels for closer inspection; Standard reduces rendering work. The choice is remembered across both pages.
 - Untick **Show labels** to hide the era, year and camera hint. This preference is remembered in the browser.
 - With the canvas focused: Space plays/pauses; arrows adjust the year; Shift+arrow changes 25 years; Home/End selects the endpoints; R resets the view; F toggles fullscreen.
 - On Photo Comparison, select either photograph and adjust the overlay slider, or choose Photo only / Model only.
@@ -45,6 +46,8 @@ The site is a working interpretation, not a measured survey. Its contemporary ge
 ## Validation
 
 After building, run `npx playwright install chromium` once and then `npm test`. The release check serves the build below a project-style URL prefix, checks both pages and their local assets, exercises timeline and photo controls, and captures desktop/mobile screenshots in `work/qa/release/`. This checks the application, not historical accuracy.
+
+With the preview running, `node scripts/verify-render-quality.mjs` verifies actual canvas pixels on WebKit with a 3x phone display and Chromium at 1x/2x. Install the test browsers once with `npx playwright install chromium webkit`. This emulation checks rendering and controls; it does not measure performance on a physical iPhone.
 
 ## Static hosting
 

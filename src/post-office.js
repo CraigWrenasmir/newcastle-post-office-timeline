@@ -1,3 +1,4 @@
+import {createRenderQuality} from './render-quality.js';
 import './post-office.css';
 import { Engine } from '@babylonjs/core/Engines/engine.js';
 import { Scene } from '@babylonjs/core/scene.js';
@@ -12,7 +13,7 @@ import { ImportMeshAsync } from '@babylonjs/core/Loading/sceneLoader.js';
 import '@babylonjs/loaders/glTF/2.0/glTFLoader.js';
 const $=id=>document.getElementById(id);const canvas=$('scene');
 const state={ready:false,view:'orbit',opacity:55,wireframe:false,photoVisible:false,error:null};
-let engine,scene,orbit,photo,camera,manifest,fits,sources,meshes=[];
+let renderQuality,engine,scene,orbit,photo,camera,manifest,fits,sources,meshes=[];
 function blend(value){state.opacity=Number(value);$('blend').value=state.opacity;$('blend-value').textContent=`${state.opacity}%`;canvas.style.opacity=state.view==='orbit'?1:state.opacity/100;}
 function select(view){
  if(!state.ready)return;const data=fits.views.find(v=>v.id===view);if(view!=='orbit'&&!data)return;
@@ -30,7 +31,7 @@ function select(view){
  engine.resize();scene.render();
 }
 async function initialise(){
- engine=new Engine(canvas,true,{alpha:true,preserveDrawingBuffer:true,powerPreference:'high-performance'});engine.setHardwareScalingLevel(Math.max(1,devicePixelRatio/1.5));
+ engine=new Engine(canvas,true,{alpha:true,preserveDrawingBuffer:true,powerPreference:'high-performance'});renderQuality=createRenderQuality(engine,$('scene'),()=>{if(state.ready)scene?.render();});
  scene=new Scene(engine);scene.useRightHandedSystem=true;scene.clearColor=new Color4(0,0,0,0);scene.imageProcessingConfiguration.exposure=.95;scene.imageProcessingConfiguration.contrast=1.15;scene.imageProcessingConfiguration.toneMappingEnabled=true;scene.imageProcessingConfiguration.toneMappingType=1;
  orbit=new ArcRotateCamera('Orbit',1,1,60,Vector3.Zero(),scene);orbit.minZ=.1;orbit.maxZ=500;orbit.lowerRadiusLimit=8;orbit.upperRadiusLimit=150;orbit.lowerBetaLimit=.1;orbit.upperBetaLimit=1.65;orbit.wheelDeltaPercentage=.018;orbit.panningSensibility=0;orbit.attachControl(canvas,true);orbit.inputs.removeByType('ArcRotateCameraKeyboardMoveInput');
  photo=new FreeCamera('Photo',Vector3.Zero(),scene);photo.minZ=.1;photo.maxZ=500;photo.inputs.clear();scene.activeCamera=orbit;
@@ -46,7 +47,7 @@ async function initialise(){
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.view)));
 $('reset').addEventListener('click',()=>select(state.view));$('blend').addEventListener('input',()=>{state.photoVisible=true;$('reference').hidden=false;blend($('blend').value);});$('photo-only').addEventListener('click',()=>{state.photoVisible=true;$('reference').hidden=false;blend(0);});$('model-only').addEventListener('click',()=>{state.photoVisible=false;$('reference').hidden=true;blend(100);});
 $('wireframe').addEventListener('change',()=>{state.wireframe=$('wireframe').checked;for(const mesh of meshes)if(mesh.material)mesh.material.wireframe=state.wireframe;scene?.render();});
-window.addEventListener('resize',()=>{engine?.resize();scene?.render();});
-document.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey||['INPUT','BUTTON','A'].includes(document.activeElement?.tagName))return;if(e.key.toLowerCase()==='r')select(state.view);if(e.key.toLowerCase()==='f')document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{});});
-window.advanceTime=()=>scene?.render();window.render_game_to_text=()=>JSON.stringify({...state,meshes:meshes.length,camera:camera?{position:camera.position.asArray(),target:camera.getTarget().asArray(),fov:camera.fov}:null});window.postOffice={getState:()=>JSON.parse(window.render_game_to_text()),select,blend};
+window.addEventListener('resize',()=>renderQuality?.resize());
+document.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey||['INPUT','BUTTON','A','SELECT'].includes(document.activeElement?.tagName))return;if(e.key.toLowerCase()==='r')select(state.view);if(e.key.toLowerCase()==='f')document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{});});
+window.advanceTime=()=>scene?.render();window.render_game_to_text=()=>JSON.stringify({...state,rendering:renderQuality?.getState(),meshes:meshes.length,camera:camera?{position:camera.position.asArray(),target:camera.getTarget().asArray(),fov:camera.fov}:null});window.postOffice={getState:()=>JSON.parse(window.render_game_to_text()),select,blend};
 initialise().catch(e=>{state.error=e.message;$('loading').textContent=`Could not load model: ${e.message}`;console.error(e);});
