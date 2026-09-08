@@ -35,7 +35,7 @@ try{
  for(const name of ['block.html','post-office-time.html','models/hunter-block.glb','models/transformation-study.glb'])assert.equal((await fetch(url+name)).status,404);
  checks.push('Only the timeline and comparison ship; models load from a project URL prefix');
  await page.screenshot({path:out+'/timeline-desktop.png',fullPage:true});
- await page.locator('[data-year="1026"]').click();state=await page.evaluate(()=>window.postOfficeTime.getState());assert.equal(state.visibleByKind.postOffice,0);assert(state.ambience.firstNationsPeople>0);
+ await page.locator('[data-year="1026"]').click();state=await page.evaluate(()=>window.postOfficeTime.getState());assert.equal(state.visibleByKind.postOffice,0);assert.equal(state.ambience.firstNationsPeople,0);assert.equal(state.ambience.movingPeople,0);assert.equal(state.ambience.countryLife.animals.length,6);
  await page.locator('[data-year="2526"]').click();state=await page.evaluate(()=>window.postOfficeTime.getState());assert.equal(state.process.ruin,1);
  await page.locator('[data-year="2026"]').click();const radius=(await page.evaluate(()=>window.postOfficeTime.getState())).camera.radius;
  await page.locator('#zoom-in').click();assert((await page.evaluate(()=>window.postOfficeTime.getState())).camera.radius<radius);

@@ -1,6 +1,4 @@
 import {MeshBuilder} from '@babylonjs/core/Meshes/meshBuilder.js';
-import {Mesh} from '@babylonjs/core/Meshes/mesh.js';
-import {VertexData} from '@babylonjs/core/Meshes/mesh.vertexData.js';
 import {Vector3} from '@babylonjs/core/Maths/math.vector.js';
 import {smooth} from './post-office-time-data.js';
 
@@ -9,40 +7,12 @@ const TAU=Math.PI*2,mod=(n,d)=>((n%d)+d)%d;
 function groundHeight(x,z){const edge=Math.max(Math.abs(x-14)/38,Math.abs(-z-12)/36);return -1.05+.55*Math.sin(x*.14)*Math.cos(z*.12)*Math.min(1,Math.max(0,(edge-.25)*1.5));}
 function surfaceHeight(year,x,z){const path=year>=1838&&((x>=-6&&x<=36&&z>=.35&&z<=6)||(x>=-6&&x<=-.4&&z>=-39&&z<=.35));const road=year>=1920&&((x>=-16&&x<=54&&z>=7&&z<=17)||(x>=-17&&x<=-7&&z>=-50&&z<=7));return path||road?-.60:groundHeight(x,z);}
 
-export function createCountryLife(scene,components,{node,finish,box,cylinder,material,C}){
- const people=[],animals=[];
- const skins=['#79533f','#91664c','#654735'].map((c,i)=>material('local skin '+i,c));
- const wraps=['#86705b','#695847','#a48c6a'].map((c,i)=>material('plain cloak '+i,c));
- const coat=material('plain nineteenth century coat','#655f50'),pants=material('plain trousers','#474c45');
+export function createCountryLife(scene,components,{node,finish,cylinder,material,C}){
+ const animals=[];
  const fur=material('dingo fur','#aa783d'),pale=material('pale fur','#d7c5a0'),dark=material('wallaby fur','#514d40'),brown=material('bandicoot fur','#89745b');
  let serial=0,lastState={};
  function oval(name,size,pos,mat,parent){const mesh=finish(MeshBuilder.CreateSphere(name+serial++,{diameter:1,segments:6},scene),mat,parent,pos);mesh.scaling.set(...size);return mesh;}
  function tube(name,points,radius,mat,parent){return finish(MeshBuilder.CreateTube(name+serial++,{path:points.map(p=>new Vector3(...p)),radius,tessellation:6},scene),mat,parent);}
- function cloak(parent,mat,index){
-  const positions=[],indices=[],segments=14;
-  for(const [y,rx,rz] of [[1.43,.30,.19],[1.08,.32,.21],[.47+(index%2)*.13,.36,.24]])for(let j=0;j<=segments;j++){const a=.42+j*(TAU-.84)/segments;positions.push(Math.sin(a)*rx,y+(y===1.43?.12*Math.sin(a)-.02:0),Math.cos(a)*rz);}
-  for(let r=0;r<2;r++)for(let j=0;j<segments;j++){const a=r*(segments+1)+j,b=a+segments+1;indices.push(a,b,a+1,a+1,b,b+1);}
-  const data=new VertexData();data.positions=positions;data.indices=indices;data.normals=[];VertexData.ComputeNormals(positions,indices,data.normals);
-  const mesh=new Mesh('Undecorated cloak '+index,scene);data.applyToMesh(mesh);return finish(mesh,mat,parent);
- }
- // Six non-portrait figures communicate presence and ordinary social movement.
- // Garment shapes are interpretations; no borrowed designs, ceremonies or named people.
- for(let i=0;i<6;i++){
-  const root=node('Awabakal presence '+i),body=node('local walking body',root),skin=skins[i%3],wrap=wraps[i%3],legs=[],arms=[],bareLegs=[],feet=[];
-  const torso=oval('torso',[.37,.56,.23],[0,1.16,0],skin,body);
-  cylinder('neck',.11,.12,.12,[0,1.47,0],skin,body);oval('head',[.225,.28,.23],[0,1.65,0],skin,body);
-  oval('hair',[.25,i%2?.27:.15,.24],[0,1.75,-.03],C.hair,body);
-  const lowerWrap=cylinder('plain wrap',.34,.35,.42,[0,.90,0],wrap,body),outer=cloak(body,wrap,i);
-  const jacket=box('nineteenth century jacket',[.42,.70,.28],[0,1.14,0],coat,body);jacket.setEnabled(false);
-  for(const side of [-1,1]){
-   const leg=node('walking leg',body);leg.position.set(side*.11,.91,0);legs.push(leg);
-   bareLegs.push(cylinder('leg',.78,.12,.10,[0,-.39,0],skin,leg));feet.push(oval('foot',[.13,.10,.23],[0,-.84,.05],skin,leg));
-   const arm=node('walking arm',body);arm.position.set(side*.24,1.39,0);arms.push(arm);
-   cylinder('upper arm',.32,.115,.10,[0,-.16,0],skin,arm);cylinder('forearm',.30,.10,.075,[0,-.45,.03],skin,arm);
-  }
-  root.scaling.setAll(i===1?.72:i===5?.89:1+(i%3)*.035);
-  people.push({root,body,legs,arms,torso,skin,outer,lowerWrap,jacket,bareLegs,feet,index:i});
- }
  function quadruped(kind,index){
   const root=node(kind+' '+index),body=node('animal body',root),dingo=kind==='Dingo',mat=dingo?fur:brown,legs=[];
   oval('animal torso',dingo?[.40,.46,1.06]:[.25,.23,.43],[0,dingo?.57:.21,0],mat,body);
@@ -81,19 +51,6 @@ export function createCountryLife(scene,components,{node,finish,box,cylinder,mat
  const trunks=components.filter(c=>c.rec.kind==='earlyTree'&&c.rec.name.endsWith('_trunk')).map(c=>({mesh:c.mesh,point:c.mesh.getAbsolutePosition().clone()}));
  function avoidTrunks(x,z){for(const t of trunks){if(!t.mesh.isEnabled())continue;const dx=x-t.point.x,dz=z-t.point.z,d=Math.hypot(dx,dz),clear=.85;if(d<clear){x+=(dx/(d||1))* (clear-d);z+=(dz/(d||1))*(clear-d);}}return [x,z];}
  function update(year,seconds,waterOn){
-  const colonial=smooth(1838,1843,year),historical=year<1903;
-  for(const p of people){
-   p.root.setEnabled(historical);if(!historical)continue;
-   const group=Math.floor(p.index/2),phase=mod(seconds/105+group*.31,1),travel=smooth(0,.78,phase),walking=phase>.015&&phase<.765,angle=travel*TAU;
-   const rx=18,rz=2.7*(1-colonial)+.8*colonial,offset=(p.index%2)*.78;
-   let x=12+rx*Math.cos(angle),z=7.3*(1-colonial)+4.25*colonial+rz*Math.sin(angle)+offset;
-   if(year<1837)[x,z]=avoidTrunks(x,z);
-   p.root.position.set(x,surfaceHeight(year,x,z),z);p.root.rotation.y=Math.atan2(-rx*Math.sin(angle),rz*Math.cos(angle));
-   const stride=walking?Math.sin(seconds*4.2+group)*.31:0;p.body.position.y=walking?.014*Math.sin(seconds*8.4+group):0;
-   p.legs[0].rotation.x=stride;p.legs[1].rotation.x=-stride;p.arms[0].rotation.x=-stride*.7;p.arms[1].rotation.x=stride*.7+(walking?0:.10*Math.sin(seconds*.6+p.index));
-   const later=year>=1850;p.outer.setEnabled(!later);p.lowerWrap.setEnabled(!later);p.jacket.setEnabled(later);p.torso.material=later?coat:p.skin;
-   p.bareLegs.forEach(m=>m.material=later?pants:p.skin);p.feet.forEach(m=>m.material=later?C.black:p.skin);
-  }
   const habitat=Math.max(1-smooth(1800,1837,year),smooth(2220,2400,year)),flooded=waterOn&&year>2160;
   for(const a of animals){
    const active=habitat>.01&&!flooded;a.root.setEnabled(active);if(!active)continue;
@@ -110,7 +67,7 @@ export function createCountryLife(scene,components,{node,finish,box,cylinder,mat
    a.tail.rotation.y=Math.sin(seconds*1.2+a.index)*.045;a.arms?.forEach(l=>l.rotation.x=moving?-.35:.12);
   }
   const visibleAnimals=animals.filter(a=>a.root.isEnabled());
-  lastState={people:historical?6:0,peopleSamples:people.filter(p=>p.root.isEnabled()).map(p=>({index:p.index,position:p.root.position.asArray(),stride:p.legs[0].rotation.x})),wardrobe:historical?(year<1850?'plain cloak interpretation':'nineteenth-century interpretation'):null,animals:visibleAnimals.map(a=>({species:a.kind,index:a.index,position:a.root.position.asArray(),stride:a.legs[0].rotation.x,head:a.head.rotation.x})),habitat,animalsHiddenForWater:flooded};
+  lastState={people:0,peopleSamples:[],wardrobe:null,animals:visibleAnimals.map(a=>({species:a.kind,index:a.index,position:a.root.position.asArray(),stride:a.legs[0].rotation.x,head:a.head.rotation.x})),habitat,animalsHiddenForWater:flooded};
  }
  return {update,getState:()=>lastState};
 }

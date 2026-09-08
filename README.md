@@ -2,7 +2,7 @@
 
 [Open the public timeline](https://craigwrenasmir.github.io/newcastle-post-office-timeline/) · [Photo Comparison](https://craigwrenasmir.github.io/newcastle-post-office-timeline/post-office.html)
 
-An interactive model of the Newcastle Post Office site at Hunter and Bolton Streets, from 1026 to 2526. Geometry builds, ages and collapses as the year changes, with moving people, wildlife, vehicles, seasons and future vegetation.
+An interactive model of the Newcastle Post Office site at Hunter and Bolton Streets, from 1026 to 2526. Geometry builds, ages and collapses as the year changes, with wildlife, vehicles, seasons and future vegetation.
 
 This repository contains two pages:
 
@@ -39,9 +39,9 @@ npm run preview
 
 ## Evidence and assets
 
-The site is a working interpretation, not a measured survey. Its contemporary geometry relies principally on 2015 and 2019 photographs. Early figures, clothing, landscape, routes and animals are interpreted; First Nations connection to Country is continuing. Future abandonment, collapse and water are authored scenarios, not forecasts. See [Evidence and sources](EVIDENCE.md) and [Attributions](ATTRIBUTIONS.md).
+The site is a working interpretation, not a measured survey. Its contemporary geometry relies principally on 2015 and 2019 photographs. The early landscape and animals are interpreted; First Nations connection to Country is continuing. Future abandonment, collapse and water are authored scenarios, not forecasts. See [Evidence and sources](EVIDENCE.md) and [Attributions](ATTRIBUTIONS.md).
 
-`src/` contains the editable browser code. `public/models/` contains the exported GLB models and manifests. Browser movement, people, fauna, plants and water are procedural additions to those models. Original Blender working files remain in the separate development workspace; this repository ships the browser version. No Snowball private archive, credentials or research downloads are included.
+`src/` contains the editable browser code. `public/models/` contains the exported GLB models and manifests. Browser movement, fauna, plants and water are procedural additions to those models. Original Blender working files remain in the separate development workspace; this repository ships the browser version. No Snowball private archive, credentials or research downloads are included.
 
 ## Validation
 

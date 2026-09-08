@@ -23,10 +23,10 @@ export function treeLife(year,seconds,index){
 }
 
 export function createSiteLife(scene,components,materials,shadow){
- const roots=[],actors=[],cars=[],birds=[],vines=[],crackPlants=[],flowers=[];
+ const roots=[],cars=[],birds=[],vines=[],crackPlants=[],flowers=[];
  let serial=0,lastState={};const colourCache=new Map();
  const material=(name,hex)=>{if(colourCache.has(hex))return colourCache.get(hex);const m=new StandardMaterial('Life '+name,scene);m.diffuseColor=Color3.FromHexString(hex);m.specularColor.set(.08,.08,.08);m.backFaceCulling=false;colourCache.set(hex,m);return m;};
- const C={skin:['#b6815c','#744e3c','#d8ad84','#a57151'].map((c,i)=>material('skin '+i,c)),hair:material('hair','#39332c'),white:material('ivory','#e9e3cc'),black:material('rubber','#252c29'),chrome:material('metal','#90998f'),glass:material('windows','#3c626a'),bark:material('roots','#594936'),leaf:material('leaves','#445f31'),grass:material('new grass','#61803b'),flower:material('spring flowers','#d7d494')};
+ const C={hair:material('hair','#39332c'),white:material('ivory','#e9e3cc'),black:material('rubber','#252c29'),chrome:material('metal','#90998f'),glass:material('windows','#3c626a'),bark:material('roots','#594936'),leaf:material('leaves','#445f31'),grass:material('new grass','#61803b'),flower:material('spring flowers','#d7d494')};
  const palettes={ '1920s':['#4b544b','#76604b','#847970','#443c37','#bbad8b'], '1970s':['#c28d39','#a15836','#526d86','#b8ad86','#576b54'], contemporary:['#d3d2c4','#4a6372','#6d8a77','#344044','#be715b']};
  const palette=Object.fromEntries(Object.entries(palettes).map(([k,v])=>[k,v.map((h,i)=>material(k+i,h))]));
  const node=(name,parent)=>{const n=new TransformNode(name,scene);if(parent)n.parent=parent;else roots.push(n);return n;};
@@ -34,34 +34,6 @@ export function createSiteLife(scene,components,materials,shadow){
  const box=(name,dimensions,pos,mat,parent)=>finish(MeshBuilder.CreateBox(name+serial++,{width:dimensions[0],height:dimensions[1],depth:dimensions[2]},scene),mat,parent,pos);
  const sphere=(name,size,pos,mat,parent)=>finish(MeshBuilder.CreateSphere(name+serial++,{diameter:1,segments:5},scene),mat,parent,pos).scaling.set(...size);
  const cylinder=(name,height,top,bottom,pos,mat,parent)=>finish(MeshBuilder.CreateCylinder(name+serial++,{height,diameterTop:top,diameterBottom:bottom,tessellation:10},scene),mat,parent,pos);
- function person(period,index){
-  const root=node(`Pedestrian ${period} ${index}`),body=node('walking body',root),shirt=palette[period][index%5],trousers=period==='1970s'?palette[period][2]:C.black,skin=C.skin[index%4];
-  box('torso',[.39,.53,.24],[0,1.19,0],shirt,body);
-  cylinder('neck',.10,.12,.12,[0,1.51,0],skin,body);sphere('head',[.23,.29,.24],[0,1.69,0],skin,body);
-  sphere('hair',[.245,.12,.25],[0,1.81,-.018],C.hair,body);
-  if(period==='1920s'){
-   cylinder('hat brim',.035,index%2?.36:.46,index%2?.36:.46,[0,1.85,0],shirt,body);cylinder('hat crown',.15,.23,.27,[0,1.92,0],shirt,body);
-   if(index%2===0)box('tie',[.055,.30,.014],[0,1.25,.132],C.white,body);
-  }
-  if(period==='1970s'){
-   sphere('longer hair',[.31,.32,.24],[0,1.72,-.08],C.hair,body);
-   const collar=box('wide collar',[.32,.11,.02],[0,1.43,.135],C.white,body);collar.rotation.z=.07;
-  }
-  if(period==='contemporary'&&index%3===0)box('backpack',[.31,.38,.15],[0,1.21,-.19],palette[period][2],body);
-  const skirt=period==='1920s'&&index%2===1;
-  if(skirt)cylinder('dress hem',.48,.40,.61,[0,.80,0],shirt,body);
-  const legs=[],arms=[];
-  for(const side of [-1,1]){
-   const leg=node('leg',body);leg.position.set(side*.115,.96,0);legs.push(leg);
-   const height=skirt?.38:.78;
-   cylinder('trouser leg',height,.16,period==='1970s'?.28:.17,[0,skirt?-.61:-.39,0],skirt?skin:trousers,leg);
-   box('shoe',[.20,.12,.32],[0,-.89,.06],period==='contemporary'?C.white:C.black,leg);
-   const arm=node('arm',body);arm.position.set(side*.255,1.40,0);arms.push(arm);
-   cylinder('sleeve',.39,.16,.13,[0,-.18,0],shirt,arm);cylinder('forearm',.25,.12,.10,[0,-.48,.015],skin,arm);
-  }
-  if(period==='1920s'&&index%3===0)box('case',[.38,.26,.14],[.31,.57,0],palette[period][1],body);
-  const actor={root,body,legs,arms,period,index,community:index%3===0?'First Nations presence':'local resident',side:index%3===0?'bolton':'hunter',direction:index%2?1:-1,speed:.78+(index%4)*.11};actors.push(actor);return actor;
- }
  function car(period,index){
   const root=node(`Traffic ${period} ${index}`),paint=palette[period][index%5],old=period==='1920s',seventies=period==='1970s';
   const len=old?4.35:seventies?4.8:4.35;
@@ -87,8 +59,8 @@ export function createSiteLife(scene,components,materials,shadow){
   }
   const record={root,period,index,side:index<2?'hunter':'bolton',direction:index%2?1:-1,wheels};cars.push(record);
  }
- for(const period of Object.keys(palettes)){for(let i=0;i<12;i++)person(period,i);for(let i=0;i<3;i++)car(period,i);}
- const countryLife=createCountryLife(scene,components,{node,finish,box,cylinder,material,C});
+ for(const period of Object.keys(palettes))for(let i=0;i<3;i++)car(period,i);
+ const countryLife=createCountryLife(scene,components,{node,finish,cylinder,material,C});
  // Simple generic birds: original silhouettes, not a species census.
  for(let i=0;i<7;i++){
   const root=node('Bird '+i),wings=[];sphere('bird body',[.20,.15,.46],[0,0,0],i%2?C.white:C.hair,root);
@@ -140,13 +112,6 @@ export function createSiteLife(scene,components,materials,shadow){
  function update(year,seconds,season='cycle',waterOn=false){
   const period=periodFor(year),seasonIndex=['summer','autumn','winter','spring'].indexOf(season),phase=seasonIndex<0?mod(seconds/64,1)*4:seasonIndex;
   const spring=(1+Math.cos((phase-3)*TAU/4))/2,wet=(1+Math.cos((phase-2)*TAU/4))/2,w= smooth(2260,2510,year),future=smooth(2070,2470,year),early=1-smooth(1810,1837,year);
-  for(const a of actors){
-   const active=a.period===period;a.root.setEnabled(active);if(!active)continue;
-   const t=mod(seconds*a.speed*a.direction+a.index*6.37,70),out=t<35?1:-1,along=t<35?t:70-t,dir=out*a.direction;
-   a.root.position.set(a.side==='hunter'?-3+along:-3.5-(a.index%2)*.75,-.58,a.side==='hunter'?3.4+(a.index%3)*.60:3-along);
-   a.root.rotation.y=a.side==='hunter'?dir*Math.PI/2:dir>0?Math.PI:0;
-   const stride=seconds*a.speed*7+a.index;a.body.position.y=.025*Math.sin(stride*2);a.legs[0].rotation.x=.45*Math.sin(stride);a.legs[1].rotation.x=-.45*Math.sin(stride);a.arms[0].rotation.x=-.32*Math.sin(stride);a.arms[1].rotation.x=.32*Math.sin(stride);
-  }
   for(const car of cars){
    car.root.setEnabled(car.period===period);if(car.period!==period)continue;const speed=car.period==='1920s'?3.1:car.period==='1970s'?4.5:4.0;
    const distance=mod(seconds*speed+car.index*29,76),along=car.direction>0?-21+distance:55-distance,fade=smooth(0,5,distance)*(1-smooth(70,76,distance));car.root.scaling.setAll(fade);
@@ -177,7 +142,7 @@ export function createSiteLife(scene,components,materials,shadow){
   const flood=waterOn?smooth(2160,2460,year):0;water.setEnabled(flood>.001);water.position.y=-.82+flood*.64;
   waterMat.setFloat('time',seconds);waterMat.setVector3('eye',scene.activeCamera.position);
   countryLife.update(year,seconds,waterOn);const country=countryLife.getState();
-  lastState={seconds,period,season:seasonIndex<0?'cycling':season,seasonPhase:phase,movingPeople:(period?12:0)+country.people,firstNationsPeople:country.people+actors.filter(a=>a.root.isEnabled()&&a.community==='First Nations presence').length,countryLife:country,movingCars:period?3:0,birds:birds.length,treeSamples:treeSamples.filter(t=>t.index<4||!t.steady),trees:{visible:year<1837?treeSamples.filter(t=>t.size>.001).length:0,steady:treeSamples.filter(t=>t.steady).length,falling:year<1837?treeSamples.filter(t=>t.fall>.01&&t.size>.01).length:0,maxScale:Math.max(...treeSamples.map(t=>t.size))},roots:vines.filter(v=>v.root.isEnabled()).length,crackGrass:crackPlants[0].root.scaling.y,water:{requested:waterOn,visible:water.isEnabled(),level:water.position.y,scenario:'Authored tidal inundation; not a flood forecast'},actorSample:actors.filter(a=>a.root.isEnabled()).slice(0,2).map(a=>({position:a.root.position.asArray(),stride:a.legs[0].rotation.x})),trafficSample:cars.filter(a=>a.root.isEnabled()).map(a=>({position:a.root.position.asArray(),period:a.period})),birdPosition:birds[0].root.position.asArray()};
+  lastState={seconds,period,season:seasonIndex<0?'cycling':season,seasonPhase:phase,movingPeople:0,firstNationsPeople:0,countryLife:country,movingCars:period?3:0,birds:birds.length,treeSamples:treeSamples.filter(t=>t.index<4||!t.steady),trees:{visible:year<1837?treeSamples.filter(t=>t.size>.001).length:0,steady:treeSamples.filter(t=>t.steady).length,falling:year<1837?treeSamples.filter(t=>t.fall>.01&&t.size>.01).length:0,maxScale:Math.max(...treeSamples.map(t=>t.size))},roots:vines.filter(v=>v.root.isEnabled()).length,crackGrass:crackPlants[0].root.scaling.y,water:{requested:waterOn,visible:water.isEnabled(),level:water.position.y,scenario:'Authored tidal inundation; not a flood forecast'},actorSample:[],trafficSample:cars.filter(a=>a.root.isEnabled()).map(a=>({position:a.root.position.asArray(),period:a.period})),birdPosition:birds[0].root.position.asArray()};
  }
  function wheelDiagnostics(){return cars.filter(c=>c.root.isEnabled()).flatMap(car=>car.wheels.map(w=>{
   car.root.computeWorldMatrix(true);w.axle.computeWorldMatrix(true);w.tyre.computeWorldMatrix(true);w.hub.computeWorldMatrix(true);
